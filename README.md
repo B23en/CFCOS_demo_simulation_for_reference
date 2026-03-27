@@ -3,7 +3,7 @@
 This repository contains reference code for the CFCOS (Content-based File Classification and Organization System) demo simulation.
 The code is provided to help readers understand the evaluation pipeline.
 
-Please note that this repository does not include API keys, authentication-related files, or the complete dataset, as it is intended for reference purposes only.
+Please note that this repository does not include API keys, authentication-related files, or the complete dataset, as it is intended for reference purposes only. In addition, this code was not used to generate the quantitative results reported in the paper and is provided solely for demonstration purposes.
 
 ### Usage
 
