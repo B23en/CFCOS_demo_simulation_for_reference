@@ -31,6 +31,6 @@ uv.lock
 **/credential/*
 
 # datasets
-# **/samples/test_case_1/*
-# **/samples/test_case_2/*
-# **/samples/test_case_3/*
+**/samples/test_case_1/*
+**/samples/test_case_2/*
+**/samples/test_case_3/*

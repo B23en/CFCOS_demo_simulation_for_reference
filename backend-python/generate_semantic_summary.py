@@ -6,12 +6,12 @@ import base64
 from PIL import Image
 from io import BytesIO
 
-from config.settings import GENERATE_SEMANTIC_SUMMARY_PROMPT
+from config.settings import GENERATE_SEMANTIC_SUMMARY_PROMPT, MODEL_NAME
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-file_path = r"../src/samples/test_case_3"
+file_path = r"../src/samples/test_case_"
 supported_exts = ['.txt', '.jpg']
 file_list = []
 
@@ -56,7 +56,7 @@ for file in file_list:
 
     try:
         completion = client.chat.completions.create(
-            model="gpt-4.1-mini",
+            model=MODEL_NAME,
             messages=[
                 {
                     "role": "system",

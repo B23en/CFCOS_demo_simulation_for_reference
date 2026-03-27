@@ -5,7 +5,7 @@ import time
 from pprint import pprint
 import traceback
 
-from config.settings import MODEL_NAME, ADVANCED_MODEL_NAME, TAG_LIST_GENERATION_PROMPT, TAGGING_PROMPT, REFLECTION_PROMPT
+from config.settings import MODEL_NAME, TAG_LIST_GENERATION_PROMPT, TAGGING_PROMPT
 
 class CFCOS:
     def __init__(self, client: AsyncOpenAI = None):
@@ -90,7 +90,7 @@ class CFCOS:
         for retry_count in range(retry_limit):
             try:
                 completion = await self.client.chat.completions.create(
-                    model=ADVANCED_MODEL_NAME,
+                    model=MODEL_NAME,
                     messages=[
                         {
                             "role": "system",
